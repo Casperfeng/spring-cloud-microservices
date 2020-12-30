@@ -4,6 +4,9 @@ The services are related to currency conversion and exchange.
 ## Technologies
 - Kotlin
 - Spring Framework (Spring Boot, Spring Cloud etc)
+- Docker
+- PostgreSQL
+- Hystrix
 - Feign
 - Zuul
 - Eureka
