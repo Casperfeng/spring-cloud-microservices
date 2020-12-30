@@ -1,0 +1,12 @@
+version: "3.7"
+
+#This file is only intended for running the project locally. Do not use this in production.
+services:
+  postgresContainer:
+    image: postgres
+    ports:
+      - 5432:5432
+    environment:
+      - POSTGRES_PASSWORD=postgrespassword
+      - POSTGRES_USER=postgresuser
+      - POSTGRES_DB=currency-exchange-service

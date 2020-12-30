@@ -1,6 +1,13 @@
 # Microservices example using Spring Cloud
 The services are related to currency conversion and exchange.
 
+## Getting started
+Prerequisites:
+- Java 11
+- Kotlin 
+- Docker
+- Maven
+
 ## Technologies
 - Kotlin
 - Spring Framework (Spring Boot, Spring Cloud etc)
@@ -18,9 +25,9 @@ The services are related to currency conversion and exchange.
 
 |     Application       |     Port          |
 | ------------- | ------------- |
+| Local PostgreSQL | 5432 |
 | Limits Service | 8080, 8081, ... |
 | Spring Cloud Config Server | 8888 |
-|  |  |
 | Currency Exchange Service | 8000, 8001, 8002, ..  |
 | Currency Conversion Service | 8100, 8101, 8102, ... |
 | Netflix Eureka Naming Server | 8761 |
