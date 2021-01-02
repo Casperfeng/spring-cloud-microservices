@@ -21,11 +21,10 @@ class CurrencyConversionController {
                 uriVariables)
 
         val response: CurrencyConversionBean? = responseEntity.body
-        println(response)
         if (response != null) {
             return CurrencyConversionBean(response.id, from, to, response.conversionMultiple, quantity, quantity.multiply(response.conversionMultiple), response.port)
         }
-        return CurrencyConversionBean(3000, from, to, BigDecimal(35), quantity, quantity.multiply(BigDecimal(35)), 8500)
+        throw Error("Problems fetching data from service")
     }
 
 }
