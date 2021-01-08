@@ -10,7 +10,7 @@ import javax.servlet.http.HttpServletRequest
 @Component
 class ZuulLoggingFilter(): ZuulFilter() {
 
-    val logger = LoggerFactory.getLogger("package.ClassName")
+    val logger: Logger = LoggerFactory.getLogger("package.ClassName")
 
     override fun shouldFilter(): Boolean {
         return true
